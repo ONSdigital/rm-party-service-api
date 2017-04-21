@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns="http://ons.gov.uk/ctp/response/sample/definition"
+           targetNamespace="http://ons.gov.uk/ctp/response/sample/definition">
+
+  <xs:element name="party" type="Party" />
+    <xs:complexType name="Party">
+      <xs:sequence>
+        <xs:element type="xs:int" name="sampleId" />
+        <xs:element type="xs:string" name="sampleUnitRef" />
+        <xs:element type="xs:string" name="sampleUnitType" />
+        <xs:element type="xs:string" name="forename" />
+        <xs:element type="xs:int" name="size" />
+        <xs:element type="xs:int" name="position" />
+      </xs:sequence>
+    </xs:complexType>
+</xs:schema>
