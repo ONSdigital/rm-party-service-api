@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-           xmlns="http://ons.gov.uk/ctp/response/sample/definition"
-           targetNamespace="http://ons.gov.uk/ctp/response/sample/definition">
+           xmlns="http://ons.gov.uk/ctp/response/party/definition"
+           targetNamespace="http://ons.gov.uk/ctp/response/party/definition">
 
   <xs:element name="party" type="Party" />
     <xs:complexType name="Party">
