@@ -1,8 +1,19 @@
 <?xml version="1.0"?>
-<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" jxb:extensionBindingPrefixes="xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <jxb:bindings schemaLocation="party-service.xsd" node="/xs:schema">
-    <jxb:globalBindings>
-        <xjc:simple />
-    </jxb:globalBindings>
-  </jxb:bindings>
-</jxb:bindings>
+<jaxb:bindings version="2.1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+  xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+  jaxb:extensionBindingPrefixes="xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <jaxb:bindings schemaLocation="party-service.xsd" node="/xs:schema">
+    <jaxb:globalBindings>
+      <xjc:simple />
+    </jaxb:globalBindings>
+
+    <jaxb:bindings schemaLocation="party-service.xsd"
+      node="//xs:complexType[@name='Party']//xs:element[@name='attributes']">
+      <jaxb:property>
+        <jaxb:baseType
+          name="uk.gov.ons.ctp.response.party.definition.PartyAttributeMap" />
+      </jaxb:property>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>
