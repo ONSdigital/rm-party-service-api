@@ -19,6 +19,12 @@
 	</properties>
 
 	<dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>provided</scope>
+        </dependency>
 		<dependency>
 			<groupId>net.codesup.util</groupId>
 			<artifactId>jaxb2-rich-contract-plugin</artifactId>
@@ -49,6 +55,7 @@
 					<sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
