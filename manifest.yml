@@ -1,9 +1,0 @@
----
-applications:
-- name: PartyServiceApi
-  memory: 512M
-  host: PartyServiceApi
-  instances: 1
-  path: target/partysvc-api-10.37.0-SNAPSHOT.jar
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
-  timeout: 120
