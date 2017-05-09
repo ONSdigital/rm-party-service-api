@@ -1,0 +1,8 @@
+---
+applications:
+- name: PartyServiceApi
+  memory: 512M
+  host: PartyServiceApi
+  instances: 1
+  path: /target
+  timeout: 120
