@@ -7,9 +7,6 @@
   
   <xs:complexType name="Party">
     <xs:sequence>
-      <xs:element name="sampleId" type="xs:int" />
-      <xs:element name="position" type="xs:int" />
-      <xs:element name="size" type="xs:int" />
       <xs:element name="sampleUnitType" type="xs:string" />
       <xs:element name="sampleUnitRef" type="xs:string" />
       <xs:element name="id" type="xs:string" />
