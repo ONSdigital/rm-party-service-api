@@ -9,7 +9,6 @@
     <xs:sequence>
       <xs:element name="sampleUnitType" type="xs:string" />
       <xs:element name="sampleUnitRef" type="xs:string" />
-      <xs:element name="id" type="xs:string" />
       <xs:element name="attributes" type="PartyAttributeMapModeller"
         minOccurs="0" />
     </xs:sequence>
