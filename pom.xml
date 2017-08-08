@@ -24,7 +24,7 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.16</version>
 			<scope>provided</scope>
-		</dependency> 
+		</dependency>
 		<dependency>
 			<groupId>net.codesup.util</groupId>
 			<artifactId>jaxb2-rich-contract-plugin</artifactId>
