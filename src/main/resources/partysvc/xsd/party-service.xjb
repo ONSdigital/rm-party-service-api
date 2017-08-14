@@ -7,13 +7,5 @@
     <jaxb:globalBindings>
       <xjc:simple />
     </jaxb:globalBindings>
-
-    <jaxb:bindings schemaLocation="party-service.xsd"
-      node="//xs:complexType[@name='Party']//xs:element[@name='attributes']">
-      <jaxb:property>
-        <jaxb:baseType
-          name="uk.gov.ons.ctp.response.party.definition.PartyAttributeMap" />
-      </jaxb:property>
     </jaxb:bindings>
-  </jaxb:bindings>
 </jaxb:bindings>
