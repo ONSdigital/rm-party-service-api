@@ -7,6 +7,7 @@
 
   <xs:complexType name="Party">
     <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="sampleUnitRef" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="sampleUnitType" minOccurs="1" maxOccurs="1">
         <xs:simpleType>
