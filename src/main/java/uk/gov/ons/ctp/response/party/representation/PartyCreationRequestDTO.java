@@ -13,5 +13,5 @@ import java.util.Map;
 public class PartyCreationRequestDTO {
     protected String sampleUnitType;
     protected String sampleUnitRef;
-    protected Map<String,String> attributes;
+    protected Map<String,Object> attributes;
 }
