@@ -5,63 +5,62 @@
 
 	<groupId>uk.gov.ons.ctp.product</groupId>
 	<artifactId>partysvc-api</artifactId>
-	<version>10.42.0-SNAPSHOT</version>
+	<version>10.45.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>CTP : ResponseManagement : PartySvc-Api</name>
 	<description>CTP : ResponseManagement : PartySvc-Api</description>
 
+	<parent>
+		<groupId>uk.gov.ons.ctp.product</groupId>
+		<artifactId>rm-common-config</artifactId>
+		<version>10.45.0-SNAPSHOT</version>
+	</parent>
+
 	<properties>
+		<commonbom.version>10.45.0-SNAPSHOT</commonbom.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>uk.gov.ons.ctp.product</groupId>
+				<artifactId>rm-common-config</artifactId>
+				<version>${commonbom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.16</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.codesup.util</groupId>
 			<artifactId>jaxb2-rich-contract-plugin</artifactId>
-			<version>1.15.0</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
+		<defaultGoal>clean install</defaultGoal>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven.compiler.plugin.version}</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<configuration>
-					<sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
-				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
-				<version>0.13.1</version>
-
 				<executions>
 					<execution>
 						<phase>generate-sources</phase>
@@ -88,7 +87,7 @@
 								<plugin>
 									<groupId>net.codesup.util</groupId>
 									<artifactId>jaxb2-rich-contract-plugin</artifactId>
-									<version>1.15.0</version>
+									<version>1.18.0</version>
 								</plugin>
 								<plugin>
 									<groupId>org.jvnet.jaxb2_commons</groupId>
@@ -123,5 +122,4 @@
 			</activation>
 		</profile>
 	</profiles>
-	
 </project>
