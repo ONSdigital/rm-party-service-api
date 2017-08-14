@@ -77,7 +77,7 @@
 							<schemaIncludes>
 								<include>party-service.xsd</include>
 							</schemaIncludes>
-							<generateDirectory>${project.build.directory}/generated-sources/xjc/inbound</generateDirectory>
+							<generateDirectory>${project.build.directory}/generated-sources/xjc/outbound</generateDirectory>
 							<args>
 								<arg>-Xvalue-constructor</arg>
 								<arg>-Xfluent-builder</arg>
