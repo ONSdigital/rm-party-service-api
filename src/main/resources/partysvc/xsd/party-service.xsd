@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns="http://ons.gov.uk/ctp/response/party/definition"
            targetNamespace="http://ons.gov.uk/ctp/response/party/definition">
   
@@ -52,6 +52,7 @@
           <xs:element name="frotover" type="xs:int" minOccurs="1" maxOccurs="1" />
           <xs:element name="entref" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="legalstatus" type="xs:string" minOccurs="1" maxOccurs="1" />
+          <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1" />         
           <xs:element name="entrepmkr" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="region" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="birthdate" type="xs:string" minOccurs="1" maxOccurs="1" />
@@ -61,12 +62,13 @@
           <xs:element name="runame1" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="runame2" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="runame3" type="xs:string" minOccurs="0" maxOccurs="1" />
+          <xs:element name="ruref" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle1" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle2" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle3" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="seltype" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="inclexcl" type="xs:string" minOccurs="0" maxOccurs="1" />
-          <xs:element name="cell_no" type="xs:int" minOccurs="1" maxOccurs="1" />
+          <xs:element name="cell_no" type="xs:int" minOccurs="1" maxOccurs="1"/>
           <xs:element name="formtype" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="currency" type="xs:string" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
