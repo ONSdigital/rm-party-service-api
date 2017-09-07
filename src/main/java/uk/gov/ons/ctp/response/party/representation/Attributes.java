@@ -36,4 +36,6 @@ public class Attributes {
   public String tradstyle2;
   public String tradstyle3;
   public String name;
+  public String firstName;
+  public String lastName;
 }
