@@ -38,4 +38,7 @@ public class Attributes {
   public String name;
   public String firstName;
   public String lastName;
+  public String emailAddress;
+  public String telephone;
+  public String ruref;
 }
