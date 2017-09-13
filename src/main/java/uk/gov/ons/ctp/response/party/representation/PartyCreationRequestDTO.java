@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 public final class PartyCreationRequestDTO {
   public String sampleUnitType;
   public String sampleUnitRef;
-  public Attributes attributes;
+  public PartyCreationRequestAttributesDTO attributes;
 
 }
