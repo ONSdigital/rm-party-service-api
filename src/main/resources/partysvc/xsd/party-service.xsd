@@ -3,11 +3,10 @@
            xmlns="http://ons.gov.uk/ctp/response/party/definition"
            targetNamespace="http://ons.gov.uk/ctp/response/party/definition">
   
-  <xs:element name="party" type="Party" />
+  <xs:element name="partyCreationRequestDTO" type="PartyCreationRequestDTO" />
 
-  <xs:complexType name="Party">
+  <xs:complexType name="PartyCreationRequestDTO">
     <xs:sequence>
-      <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="sampleUnitRef" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="sampleUnitType" minOccurs="1" maxOccurs="1">
         <xs:simpleType>
@@ -21,8 +20,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="associations" type="Association" minOccurs="0" maxOccurs="unbounded" />
-      <xs:element name="attributes" type="BusinessSampleUnit" minOccurs="1" maxOccurs="1" />
+      <xs:element name="attributes" type="PartyCreationRequestAttributesDTO" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 
@@ -41,7 +39,7 @@
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="BusinessSampleUnit">
+  <xs:complexType name="PartyCreationRequestAttributesDTO">
         <xs:sequence>
           <xs:element name="checkletter" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="frosic92" type="xs:string" minOccurs="1" maxOccurs="1" />
@@ -62,7 +60,6 @@
           <xs:element name="runame1" type="xs:string" minOccurs="1" maxOccurs="1" />
           <xs:element name="runame2" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="runame3" type="xs:string" minOccurs="0" maxOccurs="1" />
-          <xs:element name="ruref" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle1" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle2" type="xs:string" minOccurs="0" maxOccurs="1" />
           <xs:element name="tradstyle3" type="xs:string" minOccurs="0" maxOccurs="1" />
