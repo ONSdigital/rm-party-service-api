@@ -1,5 +1,6 @@
 package uk.gov.ons.ctp.response.party.representation;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,4 +17,7 @@ public class PartyDTO {
   private String sampleUnitRef;
   private Attributes attributes;
   private List<Association> associations;
+
+  @JsonIgnore
+  private String status;
 }
