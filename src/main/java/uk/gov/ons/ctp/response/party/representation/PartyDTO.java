@@ -19,5 +19,5 @@ public class PartyDTO {
   private List<Association> associations;
 
   @JsonIgnore
-  private String status;
+  private String status;   // required to cope with a BI response from PartySvc
 }

@@ -21,5 +21,5 @@ public class Association {
   private List<Enrolment> enrolments;
 
   @JsonIgnore
-  private String sampleUnitRef;
+  private String sampleUnitRef; // required to cope with a BI response from PartySvc
 }
