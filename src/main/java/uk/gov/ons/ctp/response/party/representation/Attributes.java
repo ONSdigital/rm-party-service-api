@@ -41,4 +41,5 @@ public class Attributes {
   public String emailAddress;
   public String telephone;
   public String ruref;
+  public String sampleUnitId;
 }
