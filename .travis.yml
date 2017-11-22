@@ -1,0 +1,19 @@
+language: java
+jdk: openjdk8
+
+before_install: cp .travis.settings.xml $HOME/.m2/settings.xml
+
+notifications:
+  slack:
+    rooms:
+      secure: k6bVxMFscbPh/Fg0IADb44Lebx3+W3ujNkBUav/bSUzESLF1SGwnT/zo8ka6+vjCC2LfRnvaikjbCv8HFzBL4bd3bKFbqzDD14H4jGgzad9PGvTgmVDcbZXoE8dDhULBELSRLlkwHizuB8Dq3OPRyQk1X4KefQrgSYOXbm4H4qDPFaS4tTmvuKfXuJXBKYsxbTCeK+lAn7+QABiblB1pxENZoF++8hJZEuHyABvIvs5jM/aY/FdSEiRYpCubRNR/EPYZGG2S8fnL5pQjLivrckn1Rf9NrGP4rzEEJfqX32IRVDA5j4KO8cS/XAFG6axDLj0xiMUB5T87BfZXtzTzBI3USF+PUC1Z1jnSOIgPTFphTd8/WfDOxm+1bCa8EToaiuQC+ceHzm96EE7nXWQOd7Bww8nrqgrU80+57WKwhWj/4SEFiNCatbBul/V/KKogLxxCaO7HXSJkETkN3nxqN6jKPP3EBn8VgORx6vXHzbiu63zGSmSfrmlcJkhEy+aG/IUiN7pQfpu2UD7qbFtSi7+oIDCiwX7mvJ8tasgAXamBpSChLIX0gWbGz8yov/gLNjMS0kxPbkQxD82E2FDXc2BBylIomzYOD1wYFGiRPLpCVCqu8fEUUMzauQuaOVz+7uHqWPIxmEHv1xoPQPPPFfxNn3IqS4/nG4CNnyooPA8=
+    on_failure: always
+    on_success: never
+
+cache:
+  directories:
+  - $HOME/.m2
+
+branches:
+    only:
+        - master
