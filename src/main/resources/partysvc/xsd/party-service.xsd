@@ -8,6 +8,7 @@
   <xs:complexType name="PartyCreationRequestDTO">
     <xs:sequence>
       <xs:element name="sampleUnitRef" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="sampleSummaryId" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="sampleUnitType" minOccurs="1" maxOccurs="1">
         <xs:simpleType>
           <xs:restriction base="xs:string">
