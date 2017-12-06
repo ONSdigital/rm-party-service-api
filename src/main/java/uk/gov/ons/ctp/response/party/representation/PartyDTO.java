@@ -14,6 +14,7 @@ import java.util.List;
 public class PartyDTO {
   private String id;
   private String sampleUnitType;
+  private String sampleSummaryId;
   private String sampleUnitRef;
   private Attributes attributes;
   private List<Association> associations;
