@@ -94,4 +94,11 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<url>https://github.com/ONSdigital/rm-party-service-api</url>
+		<connection>scm:git:https://github.com/ONSdigital/rm-party-service-api</connection>
+		<developerConnection>scm:git:https://github.com/ONSdigital/rm-party-service-api</developerConnection>
+	</scm>
+
+
 </project>
