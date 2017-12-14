@@ -25,6 +25,14 @@
     </xs:sequence>
   </xs:complexType>
 
+  <xs:element name="sampleLinkCreationRequestDTO" type="SampleLinkCreationRequestDTO"/>
+
+  <xs:complexType name="SampleLinkCreationRequestDTO">
+    <xs:sequence>
+    <xs:element name="collectionExerciseId" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
   <xs:complexType name="Association">
     <xs:sequence>
       <xs:element name="partyId" type="xs:string" minOccurs="1" maxOccurs="1" />    
