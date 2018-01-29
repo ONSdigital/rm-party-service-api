@@ -2,6 +2,7 @@
 package uk.gov.ons.ctp.response.party.representation;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
@@ -17,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class Association {
-  private String partyId;
+  private UUID partyId;
   private List<Enrolment> enrolments;
 
   @JsonIgnore
