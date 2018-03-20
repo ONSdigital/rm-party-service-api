@@ -18,6 +18,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class Association {
   private String partyId;
+  private String businessRespondentStatus;
   private List<Enrolment> enrolments;
 
   @JsonIgnore
