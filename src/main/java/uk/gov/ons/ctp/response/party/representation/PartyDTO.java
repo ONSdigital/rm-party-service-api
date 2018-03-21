@@ -15,7 +15,6 @@ public class PartyDTO {
   private String sampleUnitType;
   private String sampleSummaryId;
   private String sampleUnitRef;
-  private String collectionExerciseId;
   private String name;
   private Attributes attributes;
   private List<Association> associations;
