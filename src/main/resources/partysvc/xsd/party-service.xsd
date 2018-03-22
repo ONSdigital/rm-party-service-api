@@ -21,6 +21,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
+      <xs:element name="collectionExerciseId" type="xs:string" minOccurs="0" maxOccurs="1"/>
       <xs:element name="attributes" type="PartyCreationRequestAttributesDTO" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
