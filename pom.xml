@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>partysvc-api</artifactId>
-	<version>10.50.6</version>
+	<version>10.50.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>CTP : ResponseManagement : PartySvc-Api</name>
@@ -96,7 +96,7 @@
 		<url>https://github.com/ONSdigital/rm-party-service-api</url>
 		<connection>scm:git:https://github.com/ONSdigital/rm-party-service-api</connection>
 		<developerConnection>scm:git:https://github.com/ONSdigital/rm-party-service-api</developerConnection>
-	  <tag>partysvc-api-10.50.6</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 
